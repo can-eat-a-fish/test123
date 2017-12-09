@@ -1,0 +1,542 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFCFF">
+        <View 
+            android:id="@+id/view_return"
+            android:onClick="mainreturn"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/skin_centerback_btn"/>
+
+        <Button
+            android:id="@+id/btn_return"
+            android:onClick="mainreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_return"
+            android:text="关闭"
+            android:background="@drawable/button_rounded_rectangle" />
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="基本信息"/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#1000"/>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout 
+            android:layout_width="match_parent"
+          	android:layout_height="wrap_content"
+          	android:orientation="vertical"
+          	android:background="#F2F2F2">
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item1"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item1"
+	       		     android:text="商户名称："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <EditText 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="wrap_content"
+	       		      android:hint="请确保与门脸照片一致"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:background="@null"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item2"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item2"
+	       		     android:text="省、市、区："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <TextView
+	       		      android:id="@+id/tv_Regional_linkage"
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="wrap_content"
+	       		      android:text="辽宁省沈阳市东陵区"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item3"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item3"
+	       		     android:text="详细地址："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <EditText 
+	       		      android:id="@+id/et_item3_Detailed_Address"
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="wrap_content"
+	       		      android:hint="如中关村大街6号"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:background="@null"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item4"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item4"
+	       		     android:text="地图选点："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <TextView
+	       		      android:id="@+id/tv_map_select"
+	       		      android:layout_width="match_parent"
+	       		      android:layout_height="wrap_content"
+	       		      android:text="未选择"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item5"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item5"
+	       		     android:text="商户电话："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <EditText 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="wrap_content"
+	       		      android:hint="请输入商户手机或电话"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:background="@null"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              
+              
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item6"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item6"
+	       		     android:text="行业："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <TextView
+	       		      android:id="@+id/tv_item6_select_business"
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="wrap_content"
+	       		      android:text="请选择行业"
+	       		      android:textColor="#7000"
+	       		      android:layout_marginLeft="120dp"
+	       		      android:textSize="13dp"
+	       		      android:layout_centerVertical="true"/>
+	       		  
+	       	  </RelativeLayout>
+	       	  
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp"
+	       		 android:paddingBottom="20dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item7"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item7"
+	       		     android:text="门脸照片或名片照片："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <View 
+	       		      android:id="@+id/view_item7_select_picture"
+	       		      android:layout_width="100dp"
+	       		      android:layout_height="100dp"
+	       		      android:background="@drawable/addpic_nor"
+	       		      android:layout_below="@id/tv_item7"
+	       		      android:layout_marginTop="20dp"
+	       		      android:layout_marginLeft="20dp"
+	       		      />
+	       		  <View 
+	       		      android:id="@+id/view_item7_picture"
+	       		      android:layout_width="70dp"
+	       		      android:layout_height="70dp"
+	       		      android:layout_below="@id/tv_item7"
+	       		      android:layout_marginTop="35dp"
+	       		      android:layout_alignParentRight="true"
+	       		      android:layout_marginRight="20dp"
+	       		      android:background="@drawable/shili"/>
+	       	  </RelativeLayout>
+	       	  
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp"
+	       		 android:paddingBottom="20dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item8"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item8"
+	       		     android:text="经营范围："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="20dp"
+	       		      android:text="卫浴灯饰"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="20dp"
+	       		      android:text="住宅家具"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="100dp"
+	       		      android:text="办公家具"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="100dp"
+	       		      android:text="布艺软饰"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="180dp"
+	       		      android:text="家装服务"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="180dp"
+	       		      android:text="基础建材"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="260dp"
+	       		      android:text="套房系列"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item8"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="260dp"
+	       		      android:text="餐厅系列"
+	       		      android:textSize="10sp"/>
+	       		   
+	       	  </RelativeLayout>
+             
+              <RelativeLayout
+	       		 android:layout_width="match_parent"
+	        	 android:layout_height="wrap_content"
+	       		 android:text="@string/hello_world" 
+	       		 android:background="#fff"
+	       		 android:layout_marginTop="7dp"
+	       		 android:paddingBottom="20dp">
+	       		 <TextView 
+	       		     android:id="@+id/tv_item9"
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:text="*"
+	       		     android:layout_marginLeft="10dp"
+	       		     android:textColor="#FF0000"
+	       		     android:paddingTop="13dp"/>
+	       		  <TextView 
+	       		     android:layout_width="wrap_content"
+	       		     android:layout_height="wrap_content"
+	       		     android:layout_marginLeft="2dp"
+	       		     android:layout_toRightOf="@id/tv_item9"
+	       		     android:text="合作品牌："
+	       		     android:paddingTop="13dp"
+	       		     android:paddingBottom="13dp"
+	       		     />
+	       		  
+	       		  <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="20dp"
+	       		      android:text="宜家家居"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="20dp"
+	       		      android:text="美克美家"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="100dp"
+	       		      android:text="全友家私"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="100dp"
+	       		      android:text="欧派家居"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="180dp"
+	       		      android:text="曲美家具"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="180dp"
+	       		      android:text="顾家家居"
+	       		      android:textSize="10sp"/>
+	       		   
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="10dp"
+	       		      android:layout_marginLeft="260dp"
+	       		      android:text="明珠家具"
+	       		      android:textSize="10sp"/>
+	       		  
+	       		   <Button 
+	       		      android:layout_width="wrap_content"
+	       		      android:layout_height="30dp"
+	       		      android:background="@drawable/button_ellipse_state_selector"
+	       		      android:layout_below="@id/tv_item9"
+	       		      android:layout_marginTop="45dp"
+	       		      android:layout_marginLeft="260dp"
+	       		      android:text="皇朝家私"
+	       		      android:textSize="10sp"/>
+	       		   
+	       	  </RelativeLayout>
+              
+              <Button 
+                  android:layout_width="match_parent"
+                  android:layout_height="43dp"
+               	  android:background="#4876FF"
+               	  android:layout_margin="12dp"
+               	  android:text="保存并下一步"
+               	  android:onClick="mainreturn"
+               	  android:textColor="#fff"/>
+              
+          </LinearLayout>
+             
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

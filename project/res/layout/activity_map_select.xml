@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFCFF">
+        <View 
+            android:id="@+id/view_map_return"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/skin_centerback_btn"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="地图选点"/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#1000"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:background="#463">
+        
+        <com.baidu.mapapi.map.MapView    
+	        android:id="@+id/bmapView"    
+	        android:layout_width="match_parent"    
+	        android:layout_height="match_parent"    
+	        android:clickable="true" /> 
+        
+        <TextView 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+       		android:text="这是第二个活动"/>
+        
+    </FrameLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        
+        <TextView 
+            android:id="@+id/tv_map_probably"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="辽宁沈阳市于洪区沈阳化工大学"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+        
+         <TextView 
+            android:id="@+id/tv_map_particular"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="沈辽路附近"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:textColor="#7000"/>
+         
+         <View 
+             android:layout_width="0.1dp"
+             android:layout_height="35dp"
+             android:layout_marginRight="75dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:background="#4000"/>
+         <Button 
+             android:id="@+id/bt_map_confirm"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:background="#fff"
+             android:layout_marginRight="5dp"
+             android:text="确定"
+             android:textColor="#b00F"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"/>
+         
+         <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:background="#0000"
+	        android:orientation="vertical"
+	        android:clickable="true"
+	        android:padding="10dp" >
+	        
+	        <ProgressBar
+	            android:id="@+id/load_view"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:visibility="gone"
+	            android:indeterminateDrawable="@drawable/loading" />
+    		</LinearLayout>
+         
+    </RelativeLayout>
+    
+
+</LinearLayout>
